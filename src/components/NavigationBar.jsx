@@ -71,7 +71,7 @@ export default function NavigationBar() {
 					<Box sx={{ display: 'flex', gap: 1, alignItems: 'center' }}>
 						<IconButton
 							color="primary"
-							onClick={() => window.open('https://linkedin.com/in/sammed-chougule', '_blank')}
+							onClick={() => window.open('https://linkedin.com/in/sammed-16', '_blank')}
 							sx={{ 
 								'&:hover': { 
 									backgroundColor: 'rgba(10, 14, 39, 0.08)',

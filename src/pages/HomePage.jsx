@@ -7,7 +7,7 @@ export default function HomePage() {
 	const handleDownloadResume = () => {
 		// Create a link element to trigger download
 		const link = document.createElement('a')
-		link.href = '/Sammed_Chougule_Resume.pdf'
+		link.href = `${import.meta.env.BASE_URL}Sammed_Chougule_Resume.pdf`
 		link.download = 'Sammed_Chougule_Resume.pdf'
 		document.body.appendChild(link)
 		link.click()
@@ -144,7 +144,7 @@ export default function HomePage() {
 									}}
 								>
 								<img
-									src="/sammed.jpg"
+									src={`${import.meta.env.BASE_URL}sammed.jpg`}
 									alt="Sammed Chougule"
 									style={{
 										width: '100%',
@@ -183,7 +183,7 @@ export default function HomePage() {
 								}}
 							>
 								<img
-									src="/sammed2.jpg"
+									src={`${import.meta.env.BASE_URL}sammed2.jpg`}
 									alt="Sammed Chougule"
 									style={{
 										width: '100%',
