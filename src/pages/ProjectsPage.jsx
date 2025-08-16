@@ -4,6 +4,19 @@ import { GitHub, Launch } from '@mui/icons-material'
 
 export default function ProjectsPage() {
 	const projects = [
+		
+		{
+			title: "Semtech Router Interface",
+			company: "Semtech",
+			description: "Built enterprise-grade interface for routers and gateways serving 1000+ enterprise clients. Led UI simplification initiative with Basic/Advanced mode interface, improving user experience by 40%.",
+			techStack: ["React.js", "Redux", "TypeScript", "Material-UI", "React Testing Library"],
+			achievements: [
+				"Served 1000+ enterprise clients",
+				"Improved user experience by 40%",
+				"Modernized testing infrastructure",
+				"Led UI simplification initiative"
+			]
+		},
 		{
 			title: "Optessa - Car Delivery Platform",
 			company: "Josh Software Private Limited",
@@ -24,18 +37,6 @@ export default function ProjectsPage() {
 				"Handled 500+ daily transactions",
 				"Built three-layer acceptance module",
 				"Comprehensive inventory tracking system"
-			]
-		},
-		{
-			title: "Semtech Router Interface",
-			company: "Semtech",
-			description: "Built enterprise-grade interface for routers and gateways serving 1000+ enterprise clients. Led UI simplification initiative with Basic/Advanced mode interface, improving user experience by 40%.",
-			techStack: ["React.js", "Redux", "TypeScript", "Material-UI", "React Testing Library"],
-			achievements: [
-				"Served 1000+ enterprise clients",
-				"Improved user experience by 40%",
-				"Modernized testing infrastructure",
-				"Led UI simplification initiative"
 			]
 		}
 	]
@@ -166,42 +167,6 @@ export default function ProjectsPage() {
 										</Stack>
 									</Box>
 
-									{/* Action Buttons */}
-									<Stack direction="row" spacing={2}>
-										<Button 
-											variant="outlined" 
-											startIcon={<GitHub />}
-											sx={{ 
-												borderRadius: 2,
-												px: 3,
-												py: 1,
-												borderColor: 'rgba(10, 14, 39, 0.2)',
-												color: 'primary.main',
-												'&:hover': {
-													borderColor: 'primary.main',
-													bgcolor: 'rgba(10, 14, 39, 0.05)'
-												}
-											}}
-										>
-											View Code
-										</Button>
-										<Button 
-											variant="contained" 
-											startIcon={<Launch />}
-											sx={{ 
-												borderRadius: 2,
-												px: 3,
-												py: 1,
-												bgcolor: 'secondary.main',
-												'&:hover': {
-													bgcolor: 'secondary.dark',
-													transform: 'translateY(-1px)'
-												}
-											}}
-										>
-											Live Demo
-										</Button>
-									</Stack>
 								</Box>
 							</Paper>
 						</Grid>
