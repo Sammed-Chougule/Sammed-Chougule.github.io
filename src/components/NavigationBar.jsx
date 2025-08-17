@@ -6,6 +6,7 @@ import { LinkedIn, GitHub } from '@mui/icons-material'
 const navigationLinks = [
 	{ to: '/', label: 'Home' },
 	{ to: '/projects', label: 'Projects' },
+	{ to: '/skills', label: 'Skills' },
 	{ to: '/about', label: 'About' },
 	{ to: '/contact', label: 'Contact' }
 ]
